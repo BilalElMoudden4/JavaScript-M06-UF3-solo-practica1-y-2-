@@ -4,7 +4,7 @@ document.getElementById('email').addEventListener('focusout', validateEmailInput
 document.getElementById("password").addEventListener("input", validatePassword);
 document.getElementById("confirmPassword").addEventListener("input", validateConfirmPassword);
 
-// Valida el camp d'usuari per assegurar-se que no estigui buit
+// Valida el camp d'usuari per assegurar-se que no estigui buit.
 function validateUsername() {
     var input = document.getElementById('username');
     var errorMessage = document.getElementById('usernameError');
