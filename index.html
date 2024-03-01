@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validació de Formulari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="myForm" method="post" action="action_page.php" >
+        <label for="username">Usuari:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" style="color: red; display: none;">Camp obligatori</span>
+        <br><br>
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" style="color: red; display: none;">Correu electrònic invàlid</span>
+        <br><br>
+        <label for="password">Contrasenya:</label>
+        <input type="password" id="password" name="password">
+        <div id="passwordError" style="color: red;"></div>
+        <br><br>
+        <label for="confirmPassword">Confirmar Contrasenya:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <div id="confirmPasswordError" style="color: red; display: none;">Les contrasenyes no coincideixen</div>
+
+        <br><br>
+        <label for="address">Adreça Postal:</label>
+        <input type="text" id="address" name="address">
+        <span id="addressError" style="color: red; display: none;">Camp obligatori</span>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
